@@ -3,8 +3,10 @@ It Is Just A Simple Calculator Written In Python
 
 Requirments:
 
-1-pip install pyfiglet
-2-pip install termcolor2
+pip install pyfiglet
+
+
+pip install termcolor2
 
 
 
