@@ -3,10 +3,9 @@
 # Calculator
 
 
-from ast import operator
-from fig import asciiText
 
-print(asciiText("Calculator"))
+
+
 
 try:
     __firstNumber__ = int(input("Please Enter Your First Number :")) # First Number Input
