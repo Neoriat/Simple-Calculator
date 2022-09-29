@@ -7,7 +7,7 @@
 
 
 
-from ast import operator
+
 
 
 def calculate(firstNumber , secondNumber , operator):
@@ -65,7 +65,7 @@ while True:
            print("Please Enter A Number!")
            continue
 
-        result  , reminder  = calculate(__firstNumber__ , __secondNumber__ , __operator__)
+        result   = calculate(__firstNumber__ , __secondNumber__ , __operator__)
     
 
         print(f'The Answer Is {result}')
@@ -76,7 +76,7 @@ while True:
 
 
         if operator == "/":
-            print(f'The Answer Is {result} And The Reminder Is {reminder}')
+            print(f'The Answer Is {result} ')
 
         else: 
             break
