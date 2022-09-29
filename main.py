@@ -2,15 +2,14 @@
 
 def calculate(number1,number2,operand):
     if __operator__ == "+":  # Addition
-        print(f"Your Answer Is {__firstNumber__ + __secondNumber__}")
+        return __firstNumber__ + __secondNumber__
     elif __operator__ == "-":  # SubTrack
-        print(f"Your Answer Is {__firstNumber__ - __secondNumber__}")
+        return __firstNumber__ - __secondNumber__
     elif __operator__ == "*":  # Multiplation
-        print(f"Your Answer Is {__firstNumber__ * __secondNumber__}")
+        return __firstNumber__ * __secondNumber__
     try:
         if __operator__ == "/":  # Division
-            print(
-                f"Your Answer Is {__firstNumber__ / __secondNumber__} And The Reamaning Of The Division Is {__firstNumber__ % __secondNumber__}")
+            return __firstNumber__ / __secondNumber__, __firstNumber__ % __secondNumber__
     except ZeroDivisionError:
         raise ZeroDivisionError("ZeroDivisionError")
     if __operator__ == "**":  # Power
@@ -31,7 +30,11 @@ if __name__ == '__main__':
         __secondNumber__ = int(input("Please Enter Your Second Number :"))  # Second number input
     except ValueError:
         raise ValueError("Please Enter A Number")
-    calculate(__firstNumber__,__secondNumber__,__operator__)
+    result , reminder= calculate(__firstNumber__,__secondNumber__,__operator__)
+
+    print(f"Your Answer Is {result}")
+    if __operator__ == "/":
+        print(f"Reminder is {reminder}")
 
 
 
